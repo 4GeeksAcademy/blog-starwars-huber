@@ -28,7 +28,7 @@ const Card = ({ item, type }) => {
     };
 
     return (
-        <div className="card bg-secondary text-light" style={{ minWidth: "200px" }}>
+        <div className="card d-flex" style={{ minWidth: "200px" }}>
             <img src={getImageUrl()} className="card-img-top" alt={item.name} />
             <div className="card-body">
                 <h5 className="card-title">{item.name}</h5>
@@ -40,7 +40,7 @@ const Card = ({ item, type }) => {
                         className={`btn ${isFavorite ? "btn-warning" : "btn-outline-warning"}`}
                         onClick={handleFavoriteClick}
                     >
-                        <i className={`fas fa-star ${isFavorite ? "text-warning" : ""}`}></i>
+                        <i className={`fas fa-heart ${isFavorite ? "text-danger" : "text-warning"}`}></i>
                     </button>
                 </div>
             </div>

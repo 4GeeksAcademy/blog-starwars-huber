@@ -16,7 +16,7 @@ const CharacterDetails = () => {
     if (!character) return <div>Loading...</div>;
 
     return (
-        <div className="container-fluid bg-dark text-light d-flex flex-column justify-content-center" style={{ minHeight: "100vh" }}>
+        <div className="container-fluid   d-flex flex-column justify-content-center" style={{ minHeight: "100vh" }}>
             <div className="row border-bottom border-2 pb-4 border-danger py-5">
                 <div className="col-md-6">
                     <img src={`https://starwars-visualguide.com/assets/img/characters/${uid}.jpg`} alt="Character" className="img-fluid rounded" />

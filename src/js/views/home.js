@@ -13,35 +13,33 @@ export const Home = () => {
 
     return (
         <div className="container-fluid  py-5">
-            <h1 className="text-center mb-5">Star Wars Universe</h1>
-
-            <h2>Characters</h2>
+            <h1>Characters</h1>
             <div className="overflow-auto mb-4">
                 <div className="d-flex flex-row flex-nowrap">
                     {store.characters && store.characters.map(character => (
-                        <div key={character.uid} className="card bg-secondary text-light m-2" style={{ minWidth: "200px" }}>
+                        <div key={character.uid} className="card bg-secondary  m-2" style={{ minWidth: "200px" }}>
                             <Card item={character} type="characters" />
                         </div>
                     ))}
                 </div>
             </div>
 
-            <h2>Planets</h2>
+            <h1>Planets</h1>
             <div className="overflow-auto mb-4">
                 <div className="d-flex flex-row flex-nowrap">
                     {store.planets && store.planets.map(planet => (
-                        <div key={planet.uid} className="card bg-secondary text-light m-2" style={{ minWidth: "200px" }}>
+                        <div key={planet.uid} className="card bg-secondary  m-2" style={{ minWidth: "200px" }}>
                             <Card item={planet} type="planets" />
                         </div>
                     ))}
                 </div>
             </div>
 
-            <h2>Starships</h2>
+            <h1>Starships</h1>
             <div className="overflow-auto mb-4">
                 <div className="d-flex flex-row flex-nowrap">
                     {store.starships && store.starships.map(starship => (
-                        <div key={starship.uid} className="card bg-secondary text-light m-2" style={{ minWidth: "200px" }}>
+                        <div key={starship.uid} className="card bg-secondary  m-2" style={{ minWidth: "200px" }}>
                             <Card item={starship} type="starships" />
                         </div>
                     ))}
